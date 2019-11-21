@@ -5,19 +5,30 @@ body, html {
   color: White;
 }
 
-.cd-logo {
+.cd-logo,.kitchen-equipment, .cake-ingredients {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #642580;
   background-size: cover;
-  min-height: 100%;
+  min-height: 60%;
+
+  background-attachment: fixed;
 }
 
 .cd-logo {
   background-image: url("CoderDojo.png");
   min-height: 100%;
   background-size: auto;
+  opacity: 0.7;  
+}
+
+.kitchen-equipment {
+  background-image: url("utensils.JPG")
+}
+
+.cake-ingredients{
+  background-image: url("ingredients.JPG")
 }
 
 h3 {
@@ -31,4 +42,25 @@ h3 {
 .textSection {
   background-color:#642580;
   padding:50px 80px;
+}
+
+.caption {
+  position: absolute;
+  top:40%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: #41BAC1;
+  color: White;
+  padding:18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+@media only screen and (max-device-width: 1024px) {
+  .cd-logo, .layer-cake, .kitchen-equipment, .cake-ingredients, 
+  .bowl-of-cakemix, .cake-in-oven, .decorated-cake {
+    background-attachment: scroll;
+  }
 }
